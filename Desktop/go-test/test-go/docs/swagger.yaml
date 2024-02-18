@@ -1,0 +1,20 @@
+basePath: /api/v1
+host: localhost:8080
+info:
+  contact: {}
+  description: Your API Description
+  title: Your API Title
+  version: "1.0"
+paths:
+  /ping:
+    get:
+      description: Ping handler
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: pong
+          schema:
+            type: string
+      summary: Ping
+swagger: "2.0"
